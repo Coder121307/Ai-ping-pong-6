@@ -1,0 +1,55 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="1771593.jpeg">
+        <center>
+            <span>
+                <h1 class="btn btn-white heading">Ai Ping Pong</h1>
+                <br><br>
+                <button class="btn-btn-danger" id="restart" onclick="restart()">Restart</button>
+                <div id="mymodal" class="modal fade">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button class="close" data-dismiss="modal">&times</button>
+                          <h4>Instructions</h4>
+                        </div>
+            
+                        <div class="modal-body">
+                            <ol>
+                                <li>First Start the game</li>
+                                <li>Make sure your arms are visible in the webcam</li>
+                                <li>You use them to go up and down instead of using the arrow keys</li>
+                                <li>Now try to hit the ball back at your friend to see if they can hit it back.</li>
+                                <li>If they miss then you get a point and visa versa</li>
+                            </ol>
+                      </div>
+                    </div>
+                  </div>
+            </span>
+            <button class="btn btn-primary" data-toggle="model" data-target="#mymodel">Instructions</button>
+            <button class="btn btn-info" onclick="startGame()">Start</button>
+            <h4 id="status" class="btn btn-success"></h4>
+            <div id="canvas"></div>
+        </center>
+
+        <div class="copy_right_footer">
+            Devoleped by - Vedant Dalmia
+          </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
